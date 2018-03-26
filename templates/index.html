@@ -13,15 +13,19 @@
         .w3-h, .w3-hover-h:hover {
             background-color: #0dad8d !important;
         }
+
         .w3-border-a, .w3-hover-border-a:hover {
-            border-color: #e75926; !important
+            border-color: #e75926;
+        !important
         }
 
         .w3-a, .w3-hover-a:hover {
-            background-color: #e75926; !important;
+            background-color: #e75926;
+        !important;
 
         .w3-text-y, .w3-hover-text-y:hover {
-            color: #e75926; !important;
+            color: #e75926;
+        !important;
         }
     </style>
     <style>
@@ -136,7 +140,197 @@
             </div>
         </div>
     </div>
+    <style>
 
+
+        #mixedSlider {
+            position: relative;
+        }
+
+        #mixedSlider .MS-content {
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 0 5%;
+        }
+
+        #mixedSlider .MS-content .item {
+            display: inline-block;
+            position: relative;
+            vertical-align: top;
+            overflow: hidden;
+            height: 100%;
+            white-space: normal;
+            padding: 0 10px;
+        }
+
+        @media (max-width: 991px) {
+            #mixedSlider .MS-content .item {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            #mixedSlider .MS-content .item {
+                width: 100%;
+            }
+        }
+
+        #mixedSlider .MS-content .item .imgTitle {
+            position: relative;
+        }
+
+        #mixedSlider .MS-content .item .imgTitle .blogTitle {
+            margin: 0;
+            text-align: left;
+            letter-spacing: 2px;
+            color: #252525;
+            font-style: italic;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+            bottom: 0;
+            font-weight: bold;
+            padding: 0 0 2px 10px;
+        }
+
+        #mixedSlider .MS-content .item .imgTitle img {
+            height: auto;
+            width: 100%;
+        }
+
+        #mixedSlider .MS-content .item p {
+            font-size: 16px;
+            margin: 2px 10px 0 5px;
+            text-indent: 15px;
+        }
+
+        #mixedSlider .MS-content .item a {
+            float: right;
+            margin: 0 20px 0 0;
+            font-size: 16px;
+            font-style: italic;
+            color: rgba(173, 0, 0, 0.82);
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: linear 0.1s;
+        }
+
+        #mixedSlider .MS-content .item a:hover {
+            text-shadow: 0 0 1px grey;
+        }
+
+        #mixedSlider .MS-controls button {
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            outline: 0;
+            font-size: 50px;
+            top: 95px;
+            color: rgba(0, 0, 0, 0.4);
+            transition: 0.15s linear;
+        }
+
+        #mixedSlider .MS-controls button:hover {
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        @media (max-width: 992px) {
+            #mixedSlider .MS-controls button {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            #mixedSlider .MS-controls button {
+                font-size: 20px;
+            }
+        }
+
+        #mixedSlider .MS-controls .MS-left {
+            left: 0px;
+        }
+
+        @media (max-width: 767px) {
+            #mixedSlider .MS-controls .MS-left {
+                left: -10px;
+            }
+        }
+
+        #mixedSlider .MS-controls .MS-right {
+            right: 0px;
+        }
+
+        @media (max-width: 767px) {
+            #mixedSlider .MS-controls .MS-right {
+                right: -10px;
+            }
+        }
+
+        #basicSlider {
+            position: relative;
+        }
+
+        #basicSlider .MS-content {
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 0 2%;
+            height: 50px;
+        }
+
+        #basicSlider .MS-content .item {
+            display: inline-block;
+            width: 20%;
+            position: relative;
+            vertical-align: top;
+            overflow: hidden;
+            height: 100%;
+            white-space: normal;
+            line-height: 50px;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 991px) {
+
+            #basicSlider .MS-content .item {
+                width: 25%;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            #basicSlider .MS-content .item {
+                width: 35%;
+            }
+
+        }
+
+        @media (max-width: 500px) {
+
+            #basicSlider .MS-content .item {
+                width: 50%;
+            }
+        }
+
+        #basicSlider .MS-content .item a {
+            line-height: 50px;
+            vertical-align: middle;
+        }
+
+        #basicSlider .MS-controls button {
+            position: absolute;
+        }
+
+        #basicSlider .MS-controls .MS-left {
+            top: 35px;
+            left: 10px;
+        }
+
+        #basicSlider .MS-controls .MS-right {
+            top: 35px;
+            right: 10px;
+        }
+
+
+    </style>
     <!-- Market Section -->
     <div id="works-section">
         <div class="container"> <!-- Container -->
@@ -156,7 +350,7 @@
                             <img src="{% static 'img/portfolio/02.jpg' %}" style="width:100%">
                             <div class="w3-container w3-white ">
 
-                                <h4 style="margin-top: 10px;">Cinque Terre</h4>
+                                <h4 style="margin-top: 10px;" class="w3-center">Cinque Terre</h4>
                                 <p class="w3-justify" style="margin-top: 10px;margin-bottom: 10px;">The Cinque Terre
                                     (five lands) is a portion of the Italian Riviera. The coastline with five
                                     villages:

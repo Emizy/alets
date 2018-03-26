@@ -687,13 +687,33 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span
                     class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
-            <a class="navbar-brand" href="{% url 'index' %}"><i class="fa fa-sun-o"></i> <strong>Alets</strong></a></div>
+            <a class="navbar-brand" href="{% url 'index' %}"><i class="fa fa-sun-o"></i> <strong>Alets</strong></a>
+        </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="{% url 'index' %}" class="page-scroll">Home</a></li>
-                <li><a href="{% url 'services' %}" class="page-scroll">Services</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown">Services <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="w3-text-white">Action</a></li>
+                        <li><a href="#" class="w3-text-white">CRANE , PORT & MARITIME</a></li>
+                        <li><a href="#" class="w3-text-white">ICT & TELECOMS SOLUTION</a></li>
+                        <li><a href="#" class="w3-text-white">INDUSTRIAL & MANUFACTURING</a></li>
+                        <li><a href="#" class="w3-text-white">TRAINING</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown">Our Market <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li ><a href="#" class="w3-text-white">Action</a></li>
+                        <li><a href="#" class="w3-text-white">CONSTRUCTION ,PORT & MARITIME</a></li>
+                        <li><a href="#" class="w3-text-white">PRODUCTION COMPANY</a></li>
+                        <li><a href="#" class="w3-text-white">FMCG</a></li>
+                        <li><a href="#" class="w3-text-white">HOUSEHOLD</a></li>
+                    </ul>
+                </li>
                 <li><a href="{% url 'market' %}" class="page-scroll">Our Market</a></li>
                 <li><a href="{% url 'about' %}" class="page-scroll">About</a></li>
                 <li><a href="{% url 'contact' %}" class="page-scroll">Contact</a></li>
@@ -709,7 +729,8 @@
     <div class="intro-text">
         <h1><strong>Alets</strong></h1>
         <p>Engineering Solution Through Intellectual</p>
-         <p class="w3-transparent w3-btn w3-text-white w3-hover-text-white w3-border w3-border-white w3-round"> Learn More</p>
+        <p class="w3-transparent w3-btn w3-text-white w3-hover-text-white w3-border w3-border-white w3-round"> Learn
+            More</p>
     </div>
 </header>
 {% block content %}
@@ -723,7 +744,7 @@
     <div class="container">
         <div class="social">
             <ul>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/aletsolutions/"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="https://www.linkedin.com/company/aletsolutions/"><i class="fa fa-linkedin"></i></a></li>
@@ -744,6 +765,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="{% static 'js/jquery.1.11.1.js' %}"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{% static 'js/multislider.js' %}"></script>
+<script>
+    $('#basicSlider').multislider({
+        continuous: true,
+        duration: 2000
+    });
+    $('#mixedSlider').multislider({
+        duration: 750,
+        interval: 3000
+    });
+</script>
+
 <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/SmoothScroll.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/jquery.counterup.js' %}"></script>
