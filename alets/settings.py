@@ -89,7 +89,7 @@ DATABASES = {
         'NAME': 'alets$on',
         'USER': 'alets',
         'PASSWORD': 'genius2017',
-        'HOST': 'PutItOn.mysql.pythonanywhere-services.com'
+        'HOST': 'alets.mysql.pythonanywhere-services.com'
     }
 }
 
