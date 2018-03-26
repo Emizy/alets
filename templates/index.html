@@ -1,0 +1,238 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block head %}
+    <title>Alets Solution</title>
+{% endblock %}
+
+{% block content %}
+    <style>
+        .w3-border-h, .w3-hover-border-h:hover {
+            border-color: #0dad8d !important
+        }
+
+        .w3-h, .w3-hover-h:hover {
+            background-color: #0dad8d !important;
+        }
+        .w3-border-a, .w3-hover-border-a:hover {
+            border-color: #e75926; !important
+        }
+
+        .w3-a, .w3-hover-a:hover {
+            background-color: #e75926; !important;
+
+        .w3-text-y, .w3-hover-text-y:hover {
+            color: #e75926; !important;
+        }
+    </style>
+    <style>
+        .text {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="section-title text-center center">
+                <h2>About us</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-4"><img src="{% static 'img/about.jpg' %}" class="img-responsive"></div>
+                <div class="col-md-4">
+                    <div class="about-text">
+                        <h4 style="margin-top: 10px;">Who We Are</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                            diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec
+                            ornare diam commodo nibh.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                            diam. Sed commodo nibh ante facilisis bibendum. </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about-text">
+                        <h4>What We Do</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                            diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec
+                            ornare diam.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing commodo</li>
+                            <li>Duis sed dapibus leo sed dapibus</li>
+                            <li>Sed commodo nibh ante bibendum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="text-center">
+        <div class="container">
+            <div class="section-title center">
+                <h2>Our Services</h2>
+                <hr>
+            </div>
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="service"><i class="fa fa-rocket"></i>
+                        <h3>CRANE , PORT & MARITIME</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing commodo</li>
+                            <li>Duis sed dapibus leo sed dapibus</li>
+                            <li>Sed commodo nibh ante bibendum</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="service"><i class="fa fa-desktop"></i>
+                        <h3>ICT & TELECOMS SOLUTION</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing commodo</li>
+                            <li>Duis sed dapibus leo sed dapibus</li>
+                            <li>Sed commodo nibh ante bibendum</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="service"><i class="fa fa-cogs"></i>
+                        <h3>INDUSTRIAL & MANUFACTURING</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing commodo</li>
+                            <li>Duis sed dapibus leo sed dapibus</li>
+                            <li>Sed commodo nibh ante bibendum</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="service"><i class="fa fa-leaf"></i>
+                        <h3>ELECTRICAL INSTALLATIONS</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing commodo</li>
+                            <li>Duis sed dapibus leo sed dapibus</li>
+                            <li>Sed commodo nibh ante bibendum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="service"><i class="fa fa-cog"></i>
+                        <h3>TRAINING</h3>
+                        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque
+                            natoque etiam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Section -->
+    <div id="works-section">
+        <div class="container"> <!-- Container -->
+            <div class="section-title text-center center">
+                <h2>OUR MARKET</h2>
+                <hr>
+                <div class="clearfix"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo
+                    nibh
+                    ante facilisis.</p>
+            </div>
+            <div class="w3-container">
+                <div class="w3-row-padding w3-theme">
+
+                    <div class="w3-third w3-section">
+                        <div class="w3-card-4">
+                            <img src="{% static 'img/portfolio/02.jpg' %}" style="width:100%">
+                            <div class="w3-container w3-white ">
+
+                                <h4 style="margin-top: 10px;">Cinque Terre</h4>
+                                <p class="w3-justify" style="margin-top: 10px;margin-bottom: 10px;">The Cinque Terre
+                                    (five lands) is a portion of the Italian Riviera. The coastline with five
+                                    villages:
+                                    Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore
+                                    is a UNESCO World Heritage Site.</p>
+                                <a href="#"
+                                   class="w3-block w3-btn w3-a w3-hover-a w3-border w3-border-a w3-hover-border-a w3-hover-text-white w3-text-white w3-round"
+                                   style="margin-bottom: 10px;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact-section" class="text-center">
+        <div class="container">
+            <div class="section-title center">
+                <h2>Contact Us</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo
+                    nibh
+                    ante facilisis.</p>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-4"><i class="fa fa-map-marker"></i>
+                    <p>4321 California St,<br>
+                        San Francisco, CA 12345</p>
+                </div>
+                <div class="col-md-4"><i class="fa fa-envelope-o"></i>
+                    <p>info@company.com</p>
+                </div>
+                <div class="col-md-4"><i class="fa fa-phone"></i>
+                    <p> +1 123 456 1234</p>
+                </div>
+                <hr>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Leave us a message</h3>
+                {% if success %}
+                    <div class="well w3-large w3-border w3-hover-h w3-border-h w3-h w3-hover-border-h w3-round w3-text-white w3-hover-text-white">{{ success }}</div>
+                {% endif %}
+                <form method="post" action="/index/">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name" name="name"
+                                       required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" name="email"
+                                       required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <textarea name="message" class="form-control" rows="4" placeholder="Message"
+                              required></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <input type="submit"
+                           class="w3-btn w3-h w3-border-h w3-hover-border-h w3-round w3-border w3-text-white w3-hover-text-white w3-hover-h"
+                           value="Send Message">
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
